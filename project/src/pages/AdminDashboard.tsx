@@ -188,7 +188,7 @@ function AdminDashboard() {
           </nav>
         </div>
 
-        {/* Overview Tab */}
+
         {activeTab === 'overview' && (
           <div className="space-y-8">
             {/* Stats Cards */}
@@ -242,7 +242,7 @@ function AdminDashboard() {
               </div>
             </div>
 
-            {/* Recent Activity */}
+        
             <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
               <h2 className="text-xl font-bold text-gray-900 mb-6">Recent Submissions</h2>
               <div className="space-y-4">
@@ -265,7 +265,7 @@ function AdminDashboard() {
           </div>
         )}
 
-        {/* Submissions Tab */}
+       
         {activeTab === 'submissions' && (
           <div className="space-y-6">
             {submissions.map((submission) => (
@@ -345,7 +345,6 @@ function AdminDashboard() {
           </div>
         )}
 
-        {/* Pricing Tab */}
         {activeTab === 'pricing' && (
           <div className="space-y-8">
             <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
@@ -399,7 +398,6 @@ function AdminDashboard() {
           </div>
         )}
 
-        {/* Evaluation Modal */}
         {selectedSubmission && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
             <div className="bg-white rounded-xl shadow-xl p-6 max-w-2xl w-full max-h-screen overflow-y-auto">
@@ -485,7 +483,6 @@ function AdminDashboard() {
           </div>
         )}
 
-        {/* Other tabs content can be expanded similarly */}
         {activeTab === 'customers' && (
           <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
             <h2 className="text-xl font-bold text-gray-900 mb-6">Customer Management</h2>
