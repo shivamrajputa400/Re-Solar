@@ -103,12 +103,6 @@ function LoginPage() {
               </Link>
             </p>
           </div>
-
-          {/* <div className="mt-6 p-4 bg-gray-50 rounded-lg">
-            <p className="text-xs text-gray-500 mb-2">Demo Accounts:</p>
-            <p className="text-xs text-gray-600">Customer: customer@resolar.com / customer123</p>
-            <p className="text-xs text-gray-600">Admin: admin@resolar.com / admin123</p>
-          </div> */}
         </div>
       </div>
     </div>
