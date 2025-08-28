@@ -57,7 +57,7 @@ function CustomerDashboard() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
+
     alert('Submission sent for evaluation!');
     setFormData({
       panelType: '',
@@ -104,7 +104,7 @@ function CustomerDashboard() {
           <p className="text-gray-600 mt-2">Manage your solar scrap submissions and track earnings</p>
         </div>
 
-        {/* Tab Navigation */}
+       
         <div className="border-b border-gray-200 mb-8">
           <nav className="-mb-px flex space-x-8">
             {[
@@ -129,10 +129,9 @@ function CustomerDashboard() {
           </nav>
         </div>
 
-        {/* Overview Tab */}
         {activeTab === 'overview' && (
           <div className="space-y-8">
-            {/* Stats Cards */}
+         
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="bg-white p-6 rounded-xl shadow-lg border border-gray-100">
                 <div className="flex items-center justify-between">
@@ -171,7 +170,6 @@ function CustomerDashboard() {
               </div>
             </div>
 
-            {/* Recent Activity */}
             <div className="bg-white rounded-xl shadow-lg p-6 border border-gray-100">
               <h2 className="text-xl font-bold text-gray-900 mb-6">Recent Activity</h2>
               <div className="space-y-4">
@@ -196,7 +194,7 @@ function CustomerDashboard() {
           </div>
         )}
 
-        {/* Submit Tab */}
+       
         {activeTab === 'submit' && (
           <div className="max-w-2xl mx-auto">
             <div className="bg-white rounded-xl shadow-lg p-8 border border-gray-100">
@@ -300,7 +298,6 @@ function CustomerDashboard() {
           </div>
         )}
 
-        {/* Submissions Tab */}
         {activeTab === 'submissions' && (
           <div className="space-y-6">
             {submissions.map((submission) => (
@@ -364,7 +361,7 @@ function CustomerDashboard() {
           </div>
         )}
 
-        {/* Coupons Tab */}
+
         {activeTab === 'coupons' && (
           <div className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
