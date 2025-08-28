@@ -16,7 +16,7 @@ interface AuthContextType {
 
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-// Mock users for demo
+
 const mockUsers = [
   { id: '1', email: 'customer@resolar.com', password: 'customer123', name: 'John Doe', role: 'customer' as const },
   { id: '2', email: 'admin@resolar.com', password: 'admin123', name: 'Admin User', role: 'admin' as const },
@@ -40,7 +40,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   };
 
   const register = async (email: string, password: string, name: string): Promise<boolean> => {
-    // Check if user already exists
+    
     if (mockUsers.find(u => u.email === email)) {
       return false;
     }
