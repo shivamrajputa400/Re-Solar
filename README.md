@@ -88,7 +88,7 @@ Publish Directory: dist
 
 ## 🔗 Links
 
-- 🌍 **Live Demo:** [Re-Solar](https://re-solar-gold.vercel.app/)
+- 🌍 **Live Demo:** [Re-Solar Applicatiom](https://re-solar-gold.vercel.app/)
 - 📂 **GitHub Repository:** [Re-Solar Repo](https://github.com/shivamrajputa400/Re-Solar)
 
 
